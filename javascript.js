@@ -19,20 +19,27 @@ $(function(){
     
     //パララックス設定
    var top = $('#box1').offset().top;
+   var bottom = $('#box11').offset().bottom;//bottomは取得できない
+   var clockOffset = $('.whole_clock').offset().top;
     $(window).scroll(function(){
         var value = $(this).scrollTop();
         $('#scrollValue').text(value);
+        $('#clock').text(20+Math.floor(value/900));
+        
+        if(value > clockOffset - 30){
+            $('.whole_clock').css({
+                'position':'fixed',
+                'top':0,
+            });
+        }else{
+            $('.whole_clock').css('position','static');
+        }
 
         $('.box').each(function(i){
             $(this).css('top', top + value / (i+1));
         });
         $('.box2').each(function(i){
-            $(this).css('bottom', top + value / (i+1));
+            $(this).css('bottom', bottom + value / (i+1));
         });
-        /*$('#box1').css('top', top + value / 2);
-        $('#box2').css('top', top + value / 4);
-        $('#box3').css('top', top + value / 6);
-        $('#box4').css('top', top + value / 8);
-        $('#box5').css('top', top + value / 10);*/
     });
 });

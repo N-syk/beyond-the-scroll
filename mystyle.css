@@ -1,14 +1,56 @@
 body{
     height: 5000px;
     background: #cccccc;
+    background-image:
+        url(./img/アートボード\ 4.png),
+        url(./img/アートボード\ 4.png),
+        url(./img/アートボード\ 4.png),
+        url(./img/アートボード\ 4.png),
+        url(./img/アートボード\ 4.png),
+        url(./img/アートボード\ 4.png),
+        url(./img/アートボード\ 4.png),
+        url(./img/アートボード\ 4.png),
+        url(./img/アートボード\ 4.png),
+        url(./img/アートボード\ 4.png),
+        url(./img/アートボード\ 4.png),
+        url(./img/アートボード\ 4.png);
+    background-position:
+        top 400px left,
+        top 850px left,
+        top 2770px left,
+        top 4140px left,
+        top 400px right,
+        top 850px right,
+        top 1810px right,
+        top 2770px right,
+        top 3850px right,
+        top 4820px right,
+        calc(50% - 140px) bottom,
+        calc(50% + 140px) bottom;
+    background-repeat: no-repeat;
+    background-size:
+        10% 180px,
+        10% 1650px,
+        10% 1100px,
+        10% 1000px,
+        10% 180px,
+        10% 690px,
+        10% 690px,
+        10% 700px,
+        10% 560px,
+        10% 500px,
+        3% 130px,
+        3% 130px;
 }
 h1{ 
     font-family: 'Alegreya Sans SC', sans-serif;
     text-align: center;
+    font-size: 3rem;
 }
-h2{
-    padding-top: 30px;
-    font-family: 'Noto Sans JP', sans-serif;
+.whole_clock{
+    font-size: 3em;
+    top: 30px;
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
 .box{
     position: fixed;

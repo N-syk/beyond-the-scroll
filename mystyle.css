@@ -1,4 +1,5 @@
 body{
+    position: relative;
     height: 5000px;
     background: #cccccc;
     background-image:
@@ -53,24 +54,31 @@ h1{
     font-family: 'Alegreya Sans SC', sans-serif;
 }
 .box{
-    position: fixed;
+    position: absolute;
     background-image: url(./img/scratch-animgif2-01.gif);
     background-size: contain;
     background-repeat: no-repeat;
-    top: 150px;
-    width: 4%;
-    height: 4%;
-    filter: drop-shadow(0px 12px 9px #acacac);
+    top: 400px;
+    width: 5%;
+    height: 30px;
 }
 .box2{
-    position: fixed;
+    position: absolute;
     background-image: url(./img/scratch-animgif2-01.gif);
     background-size: contain;
     background-repeat: no-repeat;
-    bottom: 150px;
-    width: 4%;
-    height: 4%;
-    filter: drop-shadow(0px 12px 9px #acacac);
+    bottom: 0px;
+    width: 5%;
+    height: 30px;
+}
+.box3{
+    position: absolute;
+    background-image: url(./img/scratch-animgif2-01.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 10px;
+    width: 5%;
+    height: 30px;    
 }
 #title{
     border-radius: 75px;
@@ -85,23 +93,33 @@ h1{
     right: 10px;
     top: 10px;
 }
-#box1{left: 10px;}
-#box2{left: 40px;}
-#box3{left: 70px;}
-#box4{left: 100px;}
-#box5{left: 130px;}
-#box6{left: 160px;}
-#box7{left: 190px;}
-#box8{left: 220px;}
-#box9{left: 250px;}
-#box10{left: 280px;}
-#box11{right: 10px;}
-#box12{right: 40px;}
-#box13{right: 70px;}
-#box14{right: 100px;}
-#box15{right: 130px;}
-#box16{right: 160px;}
-#box17{right: 190px;}
-#box18{right: 220px;}
-#box19{right: 250px;}
-#box20{right: 280px;}
+#box1{left: 10%;}
+#box2{left: 15%;}
+#box3{left: 20%;}
+#box4{left: 25%;}
+#box5{left: 30%;}
+#box6{left: 35%;}
+#box7{left: 40%;}
+#box8{left: 45%;}
+#box9{left: 50%;}
+#box10{left: 55%;}
+#box11{right: 10%;}
+#box12{right: 15%;}
+#box13{right: 20%;}
+#box14{right: 25%;}
+#box15{right: 30%;}
+#box16{right: 35%;}
+#box17{right: 40%;}
+#box18{right: 45%;}
+#box19{right: 50%;}
+#box20{right: 55%;}
+#box21{right: 12%;}
+#box22{right: 17%;}
+#box23{right: 22%;}
+#box24{right: 27%;}
+#box25{right: 32%;}
+#box26{right: 37%;}
+#box27{right: 42%;}
+#box28{right: 47%;}
+#box29{right: 52%;}
+#box30{right: 57%;}

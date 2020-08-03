@@ -34,7 +34,7 @@ $(function(){
         if(value > clockOffset - 30){
             $('.whole_clock').css({
                 'position':'fixed',
-                'top':0,
+                'top':0
             });
         }else{
             $('.whole_clock').css('position','static');
@@ -45,24 +45,24 @@ $(function(){
         var top_run = top + value * 1.24;
         var bottom_run = bottom + value * 1.24;
         $('.box').each(function(i){
-            if(value > top - 3){
-                if(top_walk > 5000){
+            if(top_walk < 5000){
+                $(this).show();
+                    $(this).css({
+                        'top':top+top_walk,
+                    });
+            }else{
                     $(this).hide();
-                }else{
-                    $(this).show();
-                    $(this).css('top', top_walk);
-                }
             }
         });
         $('.box2').each(function(i){
             $(this).css('bottom', bottom_walk);
         });
         $('.box3').each(function(i){
-            if(10 + top_run > 5000){
-                $(this).hide();
-            }else{
+            if(10 + top_run < 5000){
                 $(this).show();
                 $(this).css('top', 10 + top_run);
+            }else{
+                $(this).hide();
             }
         });
         $('.box4').each(function(i){

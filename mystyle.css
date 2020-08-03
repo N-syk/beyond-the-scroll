@@ -52,6 +52,16 @@ h1{
     font-size: 3em;
     top: 30px;
     font-family: 'Alegreya Sans SC', sans-serif;
+    padding: 5px 10px;
+    margin: 5px;
+    color: black;
+    background: #cccccc;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+.whole_clock span{
+    margin: 0;
+    padding: 0;
 }
 .box,.box2,.box3,.box4{
     position: absolute;

@@ -31,7 +31,7 @@ $(function(){
         $('#scrollValue').text(value);
         $('#clock').text(20+Math.floor(value/900));
         //時計がついてくる
-        if(value > clockOffset - 30){
+        if(value > clockOffset - 35){
             $('.whole_clock').css({
                 'position':'fixed',
                 'top':0
@@ -40,18 +40,16 @@ $(function(){
             $('.whole_clock').css('position','static');
         }
         //ぴよこが動く
-        var top_walk = value;
+        var top_walk = value　* 0.8;
         var bottom_walk = bottom + value;
-        var top_run = top + value * 1.24;
+        var top_run = value * 1.2;
         var bottom_run = bottom + value * 1.24;
         $('.box').each(function(i){
             if(top_walk < 5000){
                 $(this).show();
-                    $(this).css({
-                        'top':top+top_walk,
-                    });
+                $(this).css('top',top + top_walk);
             }else{
-                    $(this).hide();
+                $(this).hide();
             }
         });
         $('.box2').each(function(i){
@@ -60,7 +58,7 @@ $(function(){
         $('.box3').each(function(i){
             if(10 + top_run < 5000){
                 $(this).show();
-                $(this).css('top', 10 + top_run);
+                $(this).css('top', top + 10 + top_run);
             }else{
                 $(this).hide();
             }

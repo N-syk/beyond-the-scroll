@@ -53,32 +53,25 @@ h1{
     top: 30px;
     font-family: 'Alegreya Sans SC', sans-serif;
 }
-.box{
+.box,.box2,.box3,.box4{
     position: absolute;
     background-image: url(./img/scratch-animgif2-01.gif);
     background-size: contain;
     background-repeat: no-repeat;
-    top: 400px;
     width: 5%;
     height: 30px;
+}
+.box{
+    top: 400px;
 }
 .box2{
-    position: absolute;
-    background-image: url(./img/scratch-animgif2-01.gif);
-    background-size: contain;
-    background-repeat: no-repeat;
     bottom: 0px;
-    width: 5%;
-    height: 30px;
 }
 .box3{
-    position: absolute;
-    background-image: url(./img/scratch-animgif2-01.gif);
-    background-size: contain;
-    background-repeat: no-repeat;
+    top: 410px;
+}
+.box4{
     bottom: 10px;
-    width: 5%;
-    height: 30px;    
 }
 #title{
     border-radius: 75px;
@@ -94,32 +87,102 @@ h1{
     top: 10px;
 }
 #box1{left: 10%;}
-#box2{left: 15%;}
-#box3{left: 20%;}
-#box4{left: 25%;}
-#box5{left: 30%;}
-#box6{left: 35%;}
-#box7{left: 40%;}
-#box8{left: 45%;}
-#box9{left: 50%;}
-#box10{left: 55%;}
-#box11{right: 10%;}
-#box12{right: 15%;}
-#box13{right: 20%;}
-#box14{right: 25%;}
-#box15{right: 30%;}
-#box16{right: 35%;}
-#box17{right: 40%;}
-#box18{right: 45%;}
-#box19{right: 50%;}
-#box20{right: 55%;}
-#box21{right: 12%;}
-#box22{right: 17%;}
-#box23{right: 22%;}
-#box24{right: 27%;}
-#box25{right: 32%;}
+#box2{left: 13.2%;}
+#box3{left: 16.4%;}
+#box4{left: 19.6%;}
+#box5{left: 22.8%;}
+#box6{left: 26%;}
+#box7{left: 29.2%;}
+#box8{left: 32.4%;}
+#box9{left: 35.6%;}
+#box10{left: 38.8%;}
+#box11{left: 42%;}
+#box12{left: 45.2%;}
+#box13{left: 48.4%;}
+#box14{left: 51.6%;}
+#box15{left: 54.8%;}
+#box16{left: 58%;}
+#box17{left: 61.2%;}
+#box18{left: 64.4%;}
+#box19{left: 67.6%;}
+#box20{left: 70.8%;}
+#box21{left: 74%;}
+#box22{left: 77.2%;}
+#box23{left: 80.4%;}
+#box24{left: 83.6%;}
+#box25{left: 86.8%;}
 #box26{right: 37%;}
 #box27{right: 42%;}
 #box28{right: 47%;}
 #box29{right: 52%;}
 #box30{right: 57%;}
+#box31{left: 12%;}
+#box32{left: 17%;}
+#box33{left: 22%;}
+#box34{left: 27%;}
+#box35{left: 32%;}
+#box36{left: 37%;}
+#box37{left: 42%;}
+#box38{left: 47%;}
+#box39{left: 52%;}
+#box40{left: 57%;}
+#box41{left: 57%;}
+#box42{left: 57%;}
+#box43{left: 57%;}
+#box44{left: 57%;}
+#box45{left: 57%;}
+#box46{left: 57%;}
+#box47{left: 57%;}
+#box48{left: 57%;}
+#box49{left: 57%;}
+#box50{left: 57%;}
+#box51{left: 57%;}
+#box52{left: 57%;}
+#box53{left: 57%;}
+#box54{left: 57%;}
+#box55{left: 57%;}
+#box56{left: 57%;}
+#box57{left: 57%;}
+#box58{left: 57%;}
+#box59{left: 57%;}
+#box60{left: 57%;}
+#box61{left: 57%;}
+#box62{left: 57%;}
+#box63{left: 57%;}
+#box64{left: 57%;}
+#box65{left: 57%;}
+#box66{left: 57%;}
+#box67{left: 57%;}
+#box68{left: 57%;}
+#box69{left: 57%;}
+#box70{left: 57%;}
+#box71{left: 57%;}
+#box72{left: 57%;}
+#box73{left: 57%;}
+#box74{left: 57%;}
+#box75{left: 57%;}
+#box76{left: 57%;}
+#box77{left: 57%;}
+#box78{left: 57%;}
+#box79{left: 57%;}
+#box80{left: 57%;}
+#box81{left: 57%;}
+#box82{left: 57%;}
+#box83{left: 57%;}
+#box84{left: 57%;}
+#box85{left: 57%;}
+#box86{left: 57%;}
+#box87{left: 57%;}
+#box88{left: 57%;}
+#box89{left: 57%;}
+#box90{left: 57%;}
+#box91{left: 57%;}
+#box92{left: 57%;}
+#box93{left: 57%;}
+#box94{left: 57%;}
+#box95{left: 57%;}
+#box96{left: 57%;}
+#box97{left: 57%;}
+#box98{left: 57%;}
+#box99{left: 57%;}
+#box100{left: 57%;}

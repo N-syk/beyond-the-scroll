@@ -2,7 +2,7 @@ $(function(){
     //div追加
     var html1 = "", html2 = "", html3 = "", html4 = "";
     for (var i=1; i<=25; i++) {
-        html1 += "<div class='box'></div>";
+        html1 += "<div class='box'><a class='clickToolTip'></a></div>";
         html2 += "<div class='box2'></div>";
         html3 += "<div class='box3'></div>";
         html4 += "<div class='box4'></div>";
@@ -11,7 +11,10 @@ $(function(){
 
     //boxクラスにid付与
     $('.box').each(function(i){
-        $(this).attr("id", "box"+(1+i));
+        $(this).attr("id", "box"+(1+i),);
+    });
+    $('.clickToolTip').each(function(i){
+        $(this).attr("href", "#comment"+(1+i));
     });
     $('.box2').each(function(i){
         $(this).attr("id", "box"+(11+i));
@@ -24,7 +27,7 @@ $(function(){
     });
     
    var top = $('#box1').position().top;
-   var bottom = 5000 - $('#box26').position().top;//※bottomは取得できない
+   var bottom = 3000 - $('#box26').position().top;//※bottomは取得できない
    var clockOffset = $('.whole_clock').offset().top;
     $(window).scroll(function(){
         var value = $(this).scrollTop();
@@ -45,7 +48,7 @@ $(function(){
         var top_run = value * 1.2;
         var bottom_run = bottom + value * 1.24;
         $('.box').each(function(i){
-            if(top_walk < 5000){
+            if(top_walk < 3000){
                 $(this).show();
                 $(this).css('top',top + top_walk);
             }else{
@@ -56,7 +59,7 @@ $(function(){
             $(this).css('bottom', bottom_walk);
         });
         $('.box3').each(function(i){
-            if(10 + top_run < 5000){
+            if(10 + top_run < 3000){
                 $(this).show();
                 $(this).css('top', top + 10 + top_run);
             }else{
@@ -66,5 +69,26 @@ $(function(){
         $('.box4').each(function(i){
             $(this).css('bottom', 10 + bottom_run);
         });
+
+        //非表示コメントの位置
+        $('p.toolTip').each(function(i){
+            $(this).css({
+                'top': $('#box'+(1+i)).position().top - 50,
+                'left': $('#box'+(1+i)).position().left - 50
+            })
+        });
+    });
+
+    //クリックでコメント表示
+    $('a.clickToolTip').on('click', function(){
+        //個体識別
+        var targetNote = $(this).attr('href');
+
+        $('p'+targetNote).removeClass('invisible');
+        return false;
+    });
+    $('html').mousedown(function(){
+        $('p.toolTip').addClass('invisible');
+        $('a.clickToolTip').prop("disabled", false);       
     });
 });

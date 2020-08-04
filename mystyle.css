@@ -83,6 +83,30 @@ h1{
 .box4{
     bottom: 10px;
 }
+.invisible{
+    display: none;
+}
+.box a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+p.toolTip{
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: bisque;
+    color: black;
+    border-radius: 5px;
+    height: 30px;
+    min-width: 100px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+   }
 #title{
     border-radius: 75px;
     background: linear-gradient(145deg, #cccccc, #acacac);

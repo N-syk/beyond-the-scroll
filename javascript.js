@@ -1,7 +1,7 @@
 $(function(){
-    //div追加
+    //ぴよこ用div追加
     var html1 = "", html2 = "", html3 = "", html4 = "";
-    for (var i=1; i<=25; i++) {
+    for (var i=1; i<=13; i++) {
         html1 += "<div class='box'><a class='clickToolTip'></a></div>";
         html2 += "<div class='box2'><a class='clickToolTip'></a></div>";
         html3 += "<div class='box3'><a class='clickToolTip'></a></div>";
@@ -11,7 +11,7 @@ $(function(){
 
     //p追加
     var html5 = "";
-    for(var i=1; i<=100; i++){
+    for(var i=1; i<=52; i++){
         html5 += "<p class='toolTip invisible'></p>";
     }
     $('.whole_clock').after(html5);
@@ -30,16 +30,16 @@ $(function(){
        posiTop1.push($('#box'+(1+i)).position().top);
     });
     $('.box2').each(function(i){
-        $(this).attr("id", "box"+(26+i));
-        posiBottom1.push(3400 - $('#box'+(26+i)).position().top);
+        $(this).attr("id", "box"+(14+i));
+        posiBottom1.push(3400 - $('#box'+(14+i)).position().top);
     });
     $('.box3').each(function(i){
-        $(this).attr("id", "box"+(51+i));
-        posiTop2.push($('#box'+(51+i)).position().top);
+        $(this).attr("id", "box"+(27+i));
+        posiTop2.push($('#box'+(27+i)).position().top);
     });
     $('.box4').each(function(i){
-        $(this).attr("id", "box"+(76+i));
-        posiBottom2.push(3400 - $('#box'+(76+i)).position().top);
+        $(this).attr("id", "box"+(40+i));
+        posiBottom2.push(3400 - $('#box'+(40+i)).position().top);
     });
 
     //コメントにid付与
@@ -52,7 +52,7 @@ $(function(){
     $(window).scroll(function(){
         var value = $(this).scrollTop();
         $('#scrollValue').text(value);
-        $('#clock').text(20+Math.floor(value/900));
+        $('#clock').text(20+Math.floor(value/600));
         //時計がついてくる
         if(value > clockOffset - 35){
             $('.whole_clock').css({
@@ -63,10 +63,10 @@ $(function(){
             $('.whole_clock').css('position','static');
         }
         //ぴよこが動く
-        var walk = value　* 0.8;
+        var walk = value　* 0.6;
         var run = value * 1.2;
         $('.box').each(function(i){
-            if(walk < 3400){
+            if(posiTop1[i] + walk < 3400){
                 $(this).show();
                 $(this).css('top', posiTop1[i] + walk);
             }else{
@@ -77,7 +77,7 @@ $(function(){
             $(this).css('bottom', posiBottom1[i] + walk);
         });
         $('.box3').each(function(i){
-            if(10 + run < 3400){
+            if(posiTop2[i] + run < 3400){
                 $(this).show();
                 $(this).css('top', posiTop2[i] + run);
             }else{

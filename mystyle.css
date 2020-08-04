@@ -22,17 +22,17 @@ body{
         top 850px right,
         top 1810px right,
         top 2770px right,
-        calc(50% - 140px) bottom,
-        calc(50% + 140px) bottom;
+        bottom left 30%,
+        bottom right 30%;
     background-repeat: no-repeat;
     background-size:
         10% 180px,
         10% 690px,
-        10% 1200px,
+        10% 1110px,
         10% 180px,
         10% 690px,
         10% 690px,
-        10% 800px,
+        10% 650px,
         3% 130px,
         3% 130px;
 }
@@ -65,7 +65,7 @@ h1{
     height: 30px;
 }
 .box{
-    /*top: 400px;*/
+    top: 400px;
 }
 .box2{
     bottom: 0px;
@@ -115,107 +115,92 @@ p.toolTip{
 }
 #box1{
     top: 400px;
-    left: 10%;}
+    left: 10%;
+}
 #box2{
-    top: 450px;
-    left: 13.2%;}
+    top: 9800px;
+    left: 16.4%;
+}
 #box3{
-    top: 500px;
-    left: 16.4%;}
-#box4{left: 19.6%;}
-#box5{left: 22.8%;}
-#box6{left: 26%;}
-#box7{left: 29.2%;}
-#box8{left: 32.4%;}
-#box9{left: 35.6%;}
-#box10{left: 38.8%;}
-#box11{left: 42%;}
-#box12{left: 45.2%;}
-#box13{left: 48.4%;}
-#box14{left: 51.6%;}
-#box15{left: 54.8%;}
-#box16{left: 58%;}
-#box17{left: 61.2%;}
-#box18{left: 64.4%;}
-#box19{left: 67.6%;}
-#box20{left: 70.8%;}
-#box21{left: 74%;}
-#box22{left: 77.2%;}
-#box23{left: 80.4%;}
-#box24{left: 83.6%;}
-#box25{left: 86.8%;}
-#box26{right: 37%;}
-#box27{right: 42%;}
-#box28{right: 47%;}
-#box29{right: 52%;}
-#box30{right: 57%;}
-#box31{left: 12%;}
-#box32{left: 17%;}
-#box33{left: 22%;}
-#box34{left: 27%;}
-#box35{left: 32%;}
-#box36{left: 37%;}
-#box37{left: 42%;}
-#box38{left: 47%;}
-#box39{left: 52%;}
-#box40{left: 57%;}
-#box41{left: 57%;}
-#box42{left: 57%;}
-#box43{left: 57%;}
-#box44{left: 57%;}
-#box45{left: 57%;}
-#box46{left: 57%;}
-#box47{left: 57%;}
-#box48{left: 57%;}
-#box49{left: 57%;}
-#box50{left: 57%;}
-#box51{left: 57%;}
-#box52{left: 57%;}
-#box53{left: 57%;}
-#box54{left: 57%;}
-#box55{left: 57%;}
-#box56{left: 57%;}
-#box57{left: 57%;}
-#box58{left: 57%;}
-#box59{left: 57%;}
-#box60{left: 57%;}
-#box61{left: 57%;}
-#box62{left: 57%;}
-#box63{left: 57%;}
-#box64{left: 57%;}
-#box65{left: 57%;}
-#box66{left: 57%;}
-#box67{left: 57%;}
-#box68{left: 57%;}
-#box69{left: 57%;}
-#box70{left: 57%;}
-#box71{left: 57%;}
-#box72{left: 57%;}
-#box73{left: 57%;}
-#box74{left: 57%;}
-#box75{left: 57%;}
-#box76{left: 57%;}
-#box77{left: 57%;}
-#box78{left: 57%;}
-#box79{left: 57%;}
-#box80{left: 57%;}
-#box81{left: 57%;}
-#box82{left: 57%;}
-#box83{left: 57%;}
-#box84{left: 57%;}
-#box85{left: 57%;}
-#box86{left: 57%;}
-#box87{left: 57%;}
-#box88{left: 57%;}
-#box89{left: 57%;}
-#box90{left: 57%;}
-#box91{left: 57%;}
-#box92{left: 57%;}
-#box93{left: 57%;}
-#box94{left: 57%;}
-#box95{left: 57%;}
-#box96{left: 57%;}
-#box97{left: 57%;}
-#box98{left: 57%;}
-#box99{left: 57%;}
-#box100{left: 57%;}
+    top: 1450px;
+    left: 22.8%;
+}
+#box4{
+    top: 1100px;
+    left: 29.2%;
+}
+#box5{
+    top: 700px;
+    left: 35.6%;
+}
+#box6{
+    top: 1560px;
+    left: 42%;
+}
+#box7{
+    top: 1800px;
+    left: 48.4%;
+}
+#box8{
+    top: 570px;
+    left: 54.8%;
+}
+#box9{
+    top: 1250px;
+    left: 61.2%;
+}
+#box10{
+    top: 1370px;
+    left: 67.6%;
+}
+#box11{
+    top: 770px;
+    left: 74%;
+}
+#box12{
+    top: 410px;
+    left: 80.4%;
+}
+#box13{
+    top: 1050px;
+    left: 86.8%;
+}
+#box14{right: 10%;}
+#box15{right: 16.4%;}
+#box16{right: 22.8%;}
+#box17{right: 29.2%;}
+#box18{right: 35.6%;}
+#box19{right: 42%;}
+#box20{right: 48.4%;}
+#box21{right: 54.8%;}
+#box22{right: 61.2%;}
+#box23{right: 67.6%;}
+#box24{right: 74%;}
+#box25{right: 80.4%;}
+#box26{right: 86.8%;}
+#box27{left: 13.2%;}
+#box28{left: 19.6%;}
+#box29{left: 26%;}
+#box30{left: 32.4%;}
+#box31{left: 38.8%;}
+#box32{left: 45.2%;}
+#box33{left: 51.6%;}
+#box34{left: 58%;}
+#box35{left: 64.4%;}
+#box36{left: 70.8%;}
+#box37{left: 77.2%;}
+#box38{left: 83.6%;}
+#box39{left: 50%;}
+#box40{right: 13.2%;}
+#box41{right: 19.6%;}
+#box42{right: 26%;}
+#box43{right: 32.4%;}
+#box44{right: 38.8%;}
+#box45{right: 45.2%;}
+#box46{right: 51.6%;}
+#box47{right: 58%;}
+#box48{right: 64.4%;}
+#box49{right: 70.8%;}
+#box50{right: 77.2%;}
+#box51{right: 83.6%;}
+#box52{right: 50%;}

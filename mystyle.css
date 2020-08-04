@@ -1,9 +1,8 @@
 body{
     position: relative;
-    height: 5000px;
+    height: 3400px;
     background: #cccccc;
     background-image:
-        url(./img/block.png),
         url(./img/block.png),
         url(./img/block.png),
         url(./img/block.png),
@@ -18,28 +17,22 @@ body{
     background-position:
         top 400px left,
         top 850px left,
-        top 2770px left,
-        top 4140px left,
+        top 2310px left,
         top 400px right,
         top 850px right,
         top 1810px right,
         top 2770px right,
-        top 3850px right,
-        top 4820px right,
         calc(50% - 140px) bottom,
         calc(50% + 140px) bottom;
     background-repeat: no-repeat;
     background-size:
         10% 180px,
-        10% 1650px,
-        10% 1100px,
-        10% 1000px,
+        10% 690px,
+        10% 1200px,
         10% 180px,
         10% 690px,
         10% 690px,
-        10% 700px,
-        10% 560px,
-        10% 500px,
+        10% 800px,
         3% 130px,
         3% 130px;
 }
@@ -72,7 +65,7 @@ h1{
     height: 30px;
 }
 .box{
-    top: 400px;
+    /*top: 400px;*/
 }
 .box2{
     bottom: 0px;
@@ -120,9 +113,15 @@ p.toolTip{
     right: 10px;
     top: 10px;
 }
-#box1{left: 10%;}
-#box2{left: 13.2%;}
-#box3{left: 16.4%;}
+#box1{
+    top: 400px;
+    left: 10%;}
+#box2{
+    top: 450px;
+    left: 13.2%;}
+#box3{
+    top: 500px;
+    left: 16.4%;}
 #box4{left: 19.6%;}
 #box5{left: 22.8%;}
 #box6{left: 26%;}

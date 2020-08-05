@@ -56,13 +56,13 @@ h1{
     margin: 0;
     padding: 0;
 }
-.box,.box2,.box3,.box4{
+.box,.box2,.box3,.box4,.box5,.box6{
     position: absolute;
     background-image: url(./img/scratch-animgif2-01.gif);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 5%;
-    height: 30px;
+    width: 4%;
+    height: 4%;
 }
 .box{
     top: 400px;
@@ -76,17 +76,23 @@ h1{
 .box4{
     bottom: 10px;
 }
+.box5{
+    left: -10%;
+}
+.box6{
+    right: -10%;
+}
 .invisible{
     display: none;
 }
-.box a{
+.box a, .box2 a, .box3 a, .box4 a{
     position: absolute;
     top: 0;
     left: 0;
     height:100%;
     width: 100%;
 }
-p.toolTip{
+p.hukidashi{
     text-align: center;
     font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
@@ -94,7 +100,7 @@ p.toolTip{
     background-color: bisque;
     color: black;
     border-radius: 5px;
-    height: 30px;
+    min-height: 30px;
     min-width: 100px;
     top: 0px;
     left: 0px;
@@ -134,7 +140,7 @@ p.toolTip{
     left: 35.6%;
 }
 #box6{
-    top: 1560px;
+    top: 1660px;
     left: 42%;
 }
 #box7{
@@ -143,7 +149,7 @@ p.toolTip{
 }
 #box8{
     top: 570px;
-    left: 54.8%;
+    left: 57.8%;
 }
 #box9{
     top: 1250px;
@@ -151,56 +157,175 @@ p.toolTip{
 }
 #box10{
     top: 1370px;
-    left: 67.6%;
+    left: 68.9%;
 }
 #box11{
     top: 770px;
     left: 74%;
 }
 #box12{
-    top: 410px;
+    top: 1410px;
     left: 80.4%;
 }
 #box13{
     top: 1050px;
     left: 86.8%;
 }
-#box14{right: 10%;}
-#box15{right: 16.4%;}
-#box16{right: 22.8%;}
-#box17{right: 29.2%;}
-#box18{right: 35.6%;}
-#box19{right: 42%;}
-#box20{right: 48.4%;}
-#box21{right: 54.8%;}
-#box22{right: 61.2%;}
-#box23{right: 67.6%;}
-#box24{right: 74%;}
-#box25{right: 80.4%;}
-#box26{right: 86.8%;}
-#box27{left: 13.2%;}
-#box28{left: 19.6%;}
-#box29{left: 26%;}
-#box30{left: 32.4%;}
-#box31{left: 38.8%;}
-#box32{left: 45.2%;}
-#box33{left: 51.6%;}
-#box34{left: 58%;}
-#box35{left: 64.4%;}
-#box36{left: 70.8%;}
-#box37{left: 77.2%;}
-#box38{left: 83.6%;}
-#box39{left: 50%;}
-#box40{right: 13.2%;}
-#box41{right: 19.6%;}
-#box42{right: 26%;}
-#box43{right: 32.4%;}
-#box44{right: 38.8%;}
-#box45{right: 45.2%;}
-#box46{right: 51.6%;}
-#box47{right: 58%;}
-#box48{right: 64.4%;}
-#box49{right: 70.8%;}
-#box50{right: 77.2%;}
-#box51{right: 83.6%;}
-#box52{right: 50%;}
+#box14{
+    top: 450px;
+    right: 10%;
+}
+#box15{
+    top: 5300px;
+    right: 16.4%;
+}
+#box16{
+    top: 1720px;
+    right: 26.8%;
+}
+#box17{
+    top: 2500px;
+    right: 26.2%;
+}
+#box18{
+    top: 4540px;
+    right: 35.6%;
+}
+#box19{
+    top: 1560px;
+    right: 42%;
+}
+#box20{
+    top: 980px;
+    right: 48.4%;
+}
+#box21{
+    top: 4100px;
+    right: 54.8%;
+}
+#box22{
+    top: 2400px;
+    right: 56.2%;
+}
+#box23{
+    top: 3800px;
+    right: 62.6%;
+}
+#box24{
+    top: 5000px;
+    right: 74%;
+}
+#box25{
+    top: 790px;
+    right: 79.8%;
+}
+#box26{
+    top: 4500px;
+    right: 86.8%;
+}
+#box27{
+    display: none;
+    top: 10px;
+    left: 13.2%;
+}
+#box28{
+    top: 405px;
+    left: 19.6%;
+}
+#box29{
+    top: 550px;
+    left: 26%;
+}
+#box30{
+    top: 1000px;
+    left: 32.4%;
+}
+#box31{
+    top: 1000px;
+    left: 38.8%;
+}
+#box32{
+    top: 670px;
+    left: 44.2%;
+}
+#box33{
+    top: 580px;
+    left: 51%;
+}
+#box34{
+    top: -500px;
+    left: 58%;
+}
+#box35{
+    top: 470px;
+    left: 65.4%;
+}
+#box36{
+    top: 750px;
+    left: 70.8%;
+}
+#box37{
+    top: 660px;
+    left: 77.2%;
+}
+#box38{
+    display: none;
+    top: 190px;
+    left: 83.6%;
+}
+#box39{
+    top: 1000px;
+    left: 50%;
+}
+#box40{
+    top: 700px;
+    right: 13.2%;
+}
+#box41{
+    top: 1100px;
+    right: 13.2%;
+}
+#box42{
+    top: 3800px;
+    right: 26%;
+}
+#box43{
+    top: 2860px;
+    right: 34.8%;
+}
+#box44{
+    top: 4800px;
+    right: 38.8%;
+}
+#box45{
+    top: 4500px;
+    right: 45.2%;
+}
+#box46{
+    top: 3670px;
+    right: 51.6%;
+}
+#box47{
+    top: 800px;
+    right: 57.1%;
+}
+#box48{
+    top: 3430px;
+    right: 63.5%;
+}
+#box49{
+    top: 1870px;
+    right: 73.4%;
+}
+#box50{
+    top: 4230px;
+    right: 79.7%;
+}
+#box51{
+    top: 1890px;
+    right: 79.6%;
+}
+#box52{
+    top: 6000px;
+    right: 50%;
+}

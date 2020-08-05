@@ -42,7 +42,7 @@ $(function(){
     $('p#comment15').text('埼京線のホームどこ');
     $('p#comment16').text('どこでもドアないかな');
     $('p#comment17').text('今日一万歩歩けた');
-    $('p#comment18').text('今日もあの子可愛かったな');
+    $('p#comment18').text('今日も可愛かったな');
     $('p#comment19').text('夕飯何にしよう');
     $('p#comment20').text('ヒール辛いわ');
     $('p#comment21').text('吉祥寺でタピオカ飲もう');
@@ -116,10 +116,9 @@ $(function(){
         $('#scrollValue').text(value);
         $('#clock').text(20+Math.floor(value/600));
         //時計がついてくる
-        if(value > clockOffset - 30){
+        if(value > clockOffset-35){
             $('.whole_clock').css({
                 'position':'fixed',
-                'top':0
             });
         }else{
             $('.whole_clock').css('position','static');

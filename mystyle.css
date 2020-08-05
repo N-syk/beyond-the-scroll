@@ -1,6 +1,7 @@
 body{
     position: relative;
     height: 3400px;
+    margin: 0;
     background: #cccccc;
     background-image:
         url(./img/block.png),
@@ -37,6 +38,7 @@ body{
         3% 130px;
 }
 h1{ 
+    color: #594C45;
     font-family: 'Alegreya Sans SC', sans-serif;
     text-align: center;
     font-size: 3rem;
@@ -44,27 +46,34 @@ h1{
 .whole_clock{
     font-size: 3em;
     top: 30px;
+    width: 100%;
     font-family: 'Alegreya Sans SC', sans-serif;
-    padding: 5px 10px;
-    margin: 5px;
-    color: black;
-    background: #cccccc;
-    border: solid 1px black;
-    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #594C45;
+    display: block;
+    text-align: center;
 }
 .whole_clock span{
     margin: 0;
     padding: 0;
 }
-.box,.box2,.box3,.box4,.box5,.box6{
+.box,.box3{
     position: absolute;
-    background-image: url(./img/scratch-animgif2-01.gif);
+    background-image: url(./img/walk1.gif);
     background-size: contain;
     background-repeat: no-repeat;
     width: 4%;
     height: 4%;
 }
-.box{
+.box2,.box4{
+    position: absolute;
+    background-image: url(./img/walk2.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 4%;
+    height: 4%;
+}.box{
     top: 400px;
 }
 .box2{
@@ -75,12 +84,6 @@ h1{
 }
 .box4{
     bottom: 10px;
-}
-.box5{
-    left: -10%;
-}
-.box6{
-    right: -10%;
 }
 .invisible{
     display: none;
@@ -97,9 +100,10 @@ p.hukidashi{
     font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
     padding: 10px;
-    background-color: bisque;
-    color: black;
+    background-color: #F2ECE4;
+    color: #D9998B;
     border-radius: 5px;
+    border: solid 1px #D9998B;
     min-height: 30px;
     min-width: 100px;
     top: 0px;
@@ -144,7 +148,7 @@ p.hukidashi{
     left: 42%;
 }
 #box7{
-    top: 1800px;
+    top: 1700px;
     left: 48.4%;
 }
 #box8{
